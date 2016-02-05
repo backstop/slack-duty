@@ -1,0 +1,12 @@
+slack_api_token: TOKEN-HERE
+pagerduty_api_token: TOKEN-HERE
+
+usergroups:
+  dod:
+    pagerduty_schedule: PPPPPPP
+    slack_group_name: DoD
+    slack_group_description: Fundbutter DoD
+  someothergrouphandle: #the @ handle
+    pagerduty_schedule: somepagerdutyscheduleid
+    slack_group_name: defaultstothe@handlestring
+    slack_group_description: defaultstonothing
