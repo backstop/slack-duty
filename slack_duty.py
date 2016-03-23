@@ -46,7 +46,6 @@ def create_usergroup(slack, handle, group_name, group_desc, user_id):
 def slack_duty(config_file):
     config = read_config(config_file)
     slack = slacker.Slacker(config['slack_api_token'])
-    slack.users.list()
     pagerduty = pygerduty.PagerDuty('backstop', api_token=config['pagerduty_api_token'])
     usergroups = slack.usergroups.list(include_disabled=True).body['usergroups']
     for handle, group_config in config.get('usergroups', {}).items():
