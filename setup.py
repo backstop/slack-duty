@@ -9,6 +9,9 @@ setup(
     author='Backstop Solutions',
     author_email='',
     description='',
+    install_requires=['pygerduty==0.32.1',
+                      'PyYAML==3.11',
+                      'slacker==0.9.0'],
     entry_points={
         'console_scripts': [
             'slack-duty = slack_duty:main'
